@@ -21,8 +21,8 @@ dotnet tool install dotnet-ef -g
 ## Create a database with the context of the application
 dotnet ef database update
 
-# other useful commands
-# find ip
+# Other Useful Commands
+# Find ip
 Docker ps
 Docker inspect 0a0
 
