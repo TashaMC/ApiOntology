@@ -16,15 +16,28 @@
     <Compile Remove="EmptyClass.cs" />
     <Compile Remove="Controllers\WeatherForecastController.cs" />
     <Compile Remove="Models\WeatherForecast.cs" />
+    <Compile Remove="Models\CancerCode.csBK" />
+    <Compile Remove="Models\EmptyClass.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
+    <Folder Include="Data\" />
+    <Folder Include="Data\Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Dockerfile" />
+    <None Remove="Models\CancerCode.cs " />
+    <None Remove="Models\Codes.cs " />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="3.1.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.0" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Properties\launchSetting.json" />

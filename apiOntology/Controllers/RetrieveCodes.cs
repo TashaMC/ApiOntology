@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Cors;
+using apiOntology.Models;
 
 namespace apiOntology.Controllers
 {
@@ -14,24 +15,24 @@ namespace apiOntology.Controllers
     {
         [EnableCors("Policy1")]
         [HttpGet]
-        public IEnumerable<CancerCode> Get(string code)
+        public IEnumerable<Code> Get(string passedCode)
         {
-            CancerCode[] codes = {
-                new CancerCode
+            Code[] code = {
+                new Code
                 {
-                    cancerId = 1,
-                    cancerCode = "1234",
-                    otherCode = "3456"
+                    Id = 1,
+                    CancerCode = "1234",
+                    OtherCode = "3456"
                 },
-                new CancerCode
+                new Code
                 {
-                    cancerId = 1,
-                    cancerCode = "1234",
-                    otherCode = "3456"
+                    Id = 1,
+                    CancerCode = "1234",
+                    OtherCode = "3456"
                 }
             };
 
-            return codes;
+            return code;
         }
     }
 }

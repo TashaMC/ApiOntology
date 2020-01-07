@@ -1,0 +1,14 @@
+using System;
+
+namespace apiOntology
+{
+    public class Codes
+    {
+        public Int32 CancerId { get; set; }
+
+        public string CancerCode { get; set; }
+
+        public string OtherCode { get; set; }
+
+    }
+}

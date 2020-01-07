@@ -1,0 +1,5 @@
+﻿{
+  "ConnectionStrings": {
+    "OntConnString": "Server=0.0.0.0;Database=postgres;Integrated Security=true;MultipleActiveResultSets=true"
+  }
+}
